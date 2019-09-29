@@ -1,1 +1,461 @@
-"Hello World" 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Pang Wei Koh</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Inconsolata' rel='stylesheet' type='text/css'>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/homepage.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-25759655-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+  </head>
+  <body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-4">
+                <header>
+
+                    <div class="profile">
+                        <img src="pw.jpg">
+                    </div>
+
+                    <hgroup>
+                        <h1>Pang Wei Koh</h1>
+                        <p>pangwei@cs.stanford.edu <br/>
+                            <a href="Pang Wei Koh - CV.pdf" target="_blank">CV</a> |
+                            <a href="https://www.linkedin.com/in/pwkoh" target="_blank">linkedin</a> |
+                            <a href="https://scholar.google.com/citations?user=Nn990CkAAAAJ&hl=en" target="_blank">google scholar</a></p>
+                        <h2>
+                            I'm a third-year PhD student in Computer Science at Stanford working with Prof. Percy Liang.
+                            I'm interested in machine learning and its applications to biology and medicine.
+                        </h2>
+                    </hgroup>
+                </header>
+            </div>
+
+            <div class="col-md-8">
+
+
+                <div id="content">
+
+                    <div class="content-block">
+                        <h3 id="bio">Bio</h3>
+                        <p>
+                            I received my BS and MS in Computer Science from Stanford University in 2013, where I
+                            worked with Andrew Ng and Daphne Koller in the Stanford AI Lab.
+                            I grew up in Singapore and served as an "AI" (armored infantry) officer before coming to Stanford.
+                        </p>
+                        <p>
+                            In 2012, I joined Coursera as its third employee. I served as
+                            Director of Partnerships and Course Operations for two years, during which I built a team of 25
+                            people working with thousands of instructors and staff from 100+ schools, and
+                            then as the product manager in charge of university-facing products.
+                            I returned to Stanford in 2015, working for a year with Anshul Kundaje on
+                            computational biology. In 2016, I started my PhD in Computer Science at Stanford,
+                            working with Percy Liang.
+                        </p>
+                    </div>
+
+                    <div class="content-block">
+
+                        <h3 id="research">Research</h3>
+                        <p>
+                        For more information on any project, please click on its title. * = equal contribution.
+                        </p>
+
+
+                        <div class="proj">
+                            <div class="projIconAndTitle">
+                                <span class="expandIcon">+</span>
+                                <span class="projTitle">On the accuracy of influence functions for measuring group effects</span>
+                            </div>
+                            <div class="projRef">
+                                Koh PW*, Ang KS*, Teo H*, and Liang P. <em>NeurIPS</em> 2019. <a href="https://arxiv.org/abs/1905.13289" target="_blank">(preprint)</a>
+                             </div>
+                             <div class="projDesc">
+							      Influence functions are based on a first-order approximation that is accurate for small changes in the model, and so are commonly used for studying the effect of individual points in large datasets. However, we often want to study the effects of large groups of training points, e.g., to diagnose batch effect or apportion credit between different data sources. Removing such large groups can result in significant changes to the model. Are influence functions still accurate in this setting?
+
+							      We find that across many different types of groups and in a range of real-world datasets, the influence of a group correlates surprisingly well with its actual effect, even if the absolute and relative error can be large. Our analysis shows that such correlation arises under certain settings but need not hold in general, indicating that real-world datasets have particular properties that keep the influence approximation well-behaved.
+                             </div>
+                        </div>
+
+                        <div class="proj">
+                            <div class="projIconAndTitle">
+                                <span class="expandIcon">+</span>
+                                <span class="projTitle">Temporal FiLM: Capturing Long-Range Sequence Dependencies with Feature-Wise Modulations</span>
+                            </div>
+                            <div class="projRef">
+                            Birnbaum S, Kuleshov V, Enam Z, Koh PW, and Ermon S.
+								             <em>NeurIPS</em> 2019.
+                             </div>
+                            <div class="projDesc">
+                            We introduce a deep neural network architecture that captures long-range dependencies in sequential inputs, and apply it to the problems of text classification, audio super-resolution, and the enhancement of functional genomics assays.
+                            </div>
+                        </div>
+
+                        <div class="proj">
+                            <div class="projIconAndTitle">
+                                <span class="expandIcon">+</span>
+                                <span class="projTitle">Stronger data poisoning attacks break data sanitization defenses</span>
+                            </div>
+                            <div class="projRef">
+                                Koh PW*, Steinhardt J*, and Liang P. <em>ICML 2019 Workshop on Security and Privacy of Machine Learning</em>. <a href="https://arxiv.org/abs/1811.00741" target="_blank">(preprint)</a>
+                             </div>
+                             <div class="projDesc">
+                               Machine learning models trained on data from the outside world can be corrupted by data poisoning attacks that inject malicious points into the models' training sets. A common defense against these attacks is data sanitization: first filter out anomalous training points before training the model. Can data poisoning attacks break data sanitization defenses? In this paper, we develop three new attacks that can all bypass a broad range of data sanitization defenses, including commonly-used anomaly detectors based on nearest neighbors, training loss, and singular-value decomposition. Our results underscore the urgent need to develop more sophisticated and robust defenses against data poisoning attacks.
+                             </div>
+                        </div>
+
+
+                        <div class="proj">
+                            <div class="projIconAndTitle">
+                                <span class="expandIcon">+</span>
+                                <span class="projTitle">Inferring multi-dimensional rates of aging from cross-sectional data</span>
+                            </div>
+                            <div class="projRef">
+                                Pierson E*, Koh PW*, Hashimoto T*, Koller D, Leskovec J, Eriksson N, and Liang P. <em>AISTATS</em> 2019.
+								<strong>Contributed talk</strong> at the <em>ICML/IJCAI 2018 Workshop on Computational Biology</em>. <strong>Spotlight talk</strong> at the <em>NeurIPS 2018 Workshop on Machine Learning for Health</em>. <a href="https://arxiv.org/pdf/1807.04709.pdf" target="_blank">(paper)</a>
+                             </div>
+                            <div class="projDesc">
+                            	We study the task of learning how individuals change over time given only cross-sectional data,
+                            	i.e., a single observation per person. While this task is impossible in general,
+                            	we give a set of assumptions under which we can correctly learn a model from cross-sectional data, and we demonstrate that it gives reasonable results on the UK Biobank human health dataset.
+                            </div>
+                        </div>
+
+                        <div class="proj">
+                            <div class="projIconAndTitle">
+                                <span class="expandIcon">+</span>
+                                <span class="projTitle">Certified defenses for data poisoning attacks</span>
+                            </div>
+                            <div class="projRef">
+                                Steinhardt J*, Koh PW*, and Liang P. <em>NeuRIPS</em> 2017. <strong>Contributed talk</strong> at the <em>ICML 2017 Workshop on Reliable Machine Learning in the Wild</em>. <a href="https://arxiv.org/abs/1706.03691" target="_blank">(paper)</a>
+                             </div>
+                            <div class="projDesc">
+                                Machine learning systems trained on user-provided data are susceptible to data poisoning attacks, whereby malicious users inject false training data with the aim of corrupting the learned model. While recent work has proposed a number of attacks and defenses, little is understood about the worst-case loss of a defense in the face of a determined attacker. We address this by constructing approximate upper bounds on the loss across a broad family of attacks, for defenders that first perform outlier removal followed by empirical risk minimization. Our bound comes paired with a candidate attack that nearly realizes the bound, giving us a powerful tool for quickly assessing defenses on a given dataset. Empirically, we find that even under a simple defense, the MNIST-1-7 and Dogfish datasets are resilient to attack, while in contrast the IMDB sentiment dataset can be driven from 12% to 23% test error by adding only 3% poisoned data.
+                            </div>
+                        </div>
+
+                        <div class="proj">
+                            <div class="projIconAndTitle">
+                                <span class="expandIcon">+</span>
+                                <span class="projTitle">Understanding black-box predictions via influence functions</span>
+                            </div>
+                            <div class="projRef">
+                                Koh PW and Liang P. <em>ICML</em> 2017. <strong>Best Paper Award</strong>. <a href="https://arxiv.org/abs/1703.04730" target="_blank">(paper)</a>
+                                <a href="https://bit.ly/gt-influence" target="_blank">(Github)</a>
+                                <a href="https://bit.ly/cl-influence" target="_blank">(Codalab)</a>
+                             </div>
+                            <div class="projDesc">
+                                How can we explain the predictions of a black-box model? In this paper, we use influence functions -- a classic technique from robust statistics -- to trace a model's prediction through the learning algorithm and back to its training data, identifying the points most responsible for a given prediction. On linear models and convolutional neural networks, we demonstrate that influence functions are useful for many different purposes: to understand model behavior, debug models and detect dataset errors, and even identify and exploit vulnerabilities to adversarial training-set attacks.
+                            </div>
+                        </div>
+
+ <!--                        <div class="proj">
+                            <div class="projIconAndTitle">
+                                <span class="expandIcon">+</span>
+                                <span class="projTitle">A roadmap for early human liver development from pluripotent stem cells</span>
+                            </div>
+                            <div class="projRef">
+                                Ang LT, Tan KYA, Goh SHJ, Choo SH, ..., Koh PW, Weissman IL, Chen QF, Loh KM, Lim B. Under review.
+                             </div>
+                            <div class="projDesc">
+                                We describe an efficient protocol for differentiating human ESCs into a relatively homogeneous population of
+                                hepatocytes and demonstrate that these cells can engraft damaged mice livers, improving overall survival.
+                            </div>
+                        </div> -->
+
+                        <div class="proj">
+                            <div class="projIconAndTitle">
+                                <span class="expandIcon">+</span>
+                                <span class="projTitle">Localized hepatic lobular regeneration by central-vein-associated lineage-restricted progenitors</span>
+                            </div>
+                            <div class="projRef">
+                                Tsai JM, Koh PW, Walmsley GG, Poux N, Weissman IL, Rinkevich Y. <em>Proceedings of the National Academy of Sciences</em> 2017. <a href="http://www.pnas.org/content/early/2017/03/21/1621361114" target="_blank">(paper)</a>
+                            </div>
+                            <div class="projDesc">
+                                When an adult mammalian liver undergoes acute tissue loss (e.g., injury to a lobe through partial hepatectomy), the remaining liver cells undergo a program of expansion and cell division that recovers organ mass but leaves liver morphology and architecture permanently altered. Here, we identify a specific time window after birth where similar injury results instead in regeneration that results in the injured lobe being indistinguishable from normal ones. We study this previously-unknown program of liver regeneration, using clonal analysis to track the fate of hepatocyte progenitors at the injured sites. These results hint at a therapeutic window in which specific cells can undergo clonal expansion to give rise to normal structure and function in the face of injury.
+                            </div>
+                        </div>
+
+                        <div class="proj">
+                            <div class="projIconAndTitle">
+                                <span class="expandIcon">+</span>
+                                <span class="projTitle">An atlas of transcriptional, chromatin accessibility, and surface marker changes in human mesoderm development</span>
+                            </div>
+                            <div class="projRef">
+                                Koh PW*, Sinha R*, Barkal A, Morganti R, Chen A, Weissman I, Ang LT, Kundaje A, Loh K. <em>Scientific Data</em> 2016. <a href="http://www.nature.com/articles/sdata2016109" target="_blank">(paper)</a>
+                             </div>
+                            <div class="projDesc">
+                                We study the dynamics of translation, chromatin accessibility, and surface markers as pluripotent stem cells differentiate
+                                through mesoderm intermediates into bone, heart, and other cell types. Using the mesoderm populations described in our related
+                                <em>Cell</em> paper, we run bulk-population RNA-seq, single-cell RNA-seq, ATAC-seq, and high-throughput surface marker screening
+                                to characterize changes across differentiation. In contrast to the biology-focused <em>Cell</em> paper, this paper focuses on the aspects of data processing, quality control, and computational analysis.
+                            </div>
+                        </div>
+
+                        <div class="proj">
+                            <div class="projIconAndTitle">
+                                <span class="expandIcon">+</span>
+                                <span class="projTitle">A comprehensive roadmap from pluripotency to human bone, heart and other mesoderm cell types</span>
+                            </div>
+                            <div class="projRef">
+                                Loh KM*, Chen A*, Koh PW, Deng TZ, Sinha R, ..., Kundaje A, Talbot WS, Beachy PA, Ang LT, Weissman IL. <em>Cell</em> 2016. <a href="http://www.cell.com/cell/abstract/S0092-8674(16)30740-1" target="_blank">(paper)</a>
+                             </div>
+                            <div class="projDesc">
+                                We chart a developmental roadmap that allows us to differentiate pluripotent stem cells into twelve mesodermal lineages, including bone, muscle, and heart. We use this differentiation system to produce pure populations of human bone and heart progenitors that successfully engraft in <em>in vivo</em> mouse models. Our system also allows us to study previously-unobservable events in human embryonic development; using single-cell RNA-seq, we discovered a new genetic marker of somite segmentation.
+                            </div>
+                        </div>
+
+                        <div class="proj">
+                            <div class="projIconAndTitle">
+                                <span class="expandIcon">+</span>
+                                <span class="projTitle">Denoising genome-wide histone ChIP-seq with convolutional neural networks</span>
+                            </div>
+                            <div class="projRef">
+                                Koh PW*, Pierson E*, Kundaje A. Spotlight talk at <em>ICML 2016 Workshop on Computational Biology</em> (<strong>Best Poster Award</strong>) and <em>ISMB 2017</em>, and published in <em>Bioinformatics</em>. Selected for reading list of <strong>top 10 papers of 2016-2017 in regulatory and systems genomics</strong> at RECOMB/ISMB. <a href="http://biorxiv.org/content/early/2016/05/07/052118" target="_blank">(pdf)</a>
+                             </div>
+                            <div class="projDesc">
+                                Biological data is often extremely noisy. Can we make use of structure in the data to remove some of the noise? In this work, we focus on
+                                chromatin immunoprecipitation sequencing (ChIP-seq) experiments targeting histone modifications and show that a convolutional neural network trained on matching pairs of noisy and high-quality data can signifcantly improve data quality. This approach is generally applicable to biological problems where it is relatively easy to generate noisy versions of high-quality data, but difficult to analytically characterize the noise or underlying data distributions.
+                            </div>
+                        </div>
+
+                        <div class="proj">
+                            <div class="projIconAndTitle">
+                                <span class="expandIcon">+</span>
+                                <span class="projTitle">Identifying genetic drivers of cancer morphology</span>
+                            </div>
+                            <div class="projRef">
+                                Koh PW, Beck A, and Koller D. Undergraduate honors thesis. <a href="http://www.undergraduatelibrary.org/2012/computer-sciences/identifying-genetic-drivers-cancer-morphology" target="_blank">(pdf)</a>
+                                <br/> <br/>
+
+                                Awarded the <strong>Firestone Medal for Excellence in Research</strong>,
+                                the <strong>Ben Wegbreit Prize for Best Undergraduate Honors Thesis in CS</strong>,
+                                the <strong>David M. Kennedy Honors Thesis Prize</strong> for best thesis across Stanford engineering and applied sciences, and the <strong>2012 Undergraduate Award in Computer Science and Information Technology</strong>, an international research award.
+                             </div>
+                            <div class="projDesc">
+                                Cancer cells have both abnormal morphology and anomalous gene expression.
+                                How are morphology and gene expression linked?
+
+                                To answer this, we extracted clinically-relevant features
+                                from tumor micrographs, and then developed new multi-task regression methods to
+                                associate these image features with gene expression.
+                                We used this method to study data from hundreds of breast cancer patients, deriving testable hypotheses
+                                about the effect of specific genes on tumor morphology.
+                            </div>
+                        </div>
+
+                        <div class="proj">
+                            <div class="projIconAndTitle">
+                                <span class="expandIcon">+</span>
+                                <span class="projTitle">Peer and self assessment in massive online classes</span>
+                            </div>
+                            <div class="projRef">
+                                Kulkarni C, Koh PW, Le H, Chia D, Papadopoulos K, Koller D, Klemmer S.
+                                <em>ACM Transactions on Computer-Human Interaction</em> 2013 and <em>Design Thinking Research</em>.
+                                <a href="http://dl.acm.org/citation.cfm?id=2505057" target="_blank">(pdf)</a>
+                             </div>
+                            <div class="projDesc">
+                                Can we use peer- and self-assessment in MOOCs to scale up assessment and learning
+                                in global classrooms?
+                                We analyzed data from the first MOOC to use peer- and self-assessment and showed
+                                that these forms of assessment are effective and scalable, with
+                                peer grades correlating highly with staff grades. We also experimented with
+                                giving graders automatic feedback and using data to design better rubrics, further increasing
+                                grading accuracy.
+                            </div>
+                        </div>
+
+                        <div class="proj">
+                            <div class="projIconAndTitle">
+                                <span class="expandIcon">+</span>
+                                <span class="projTitle">Dissecting an online intervention for cancer survivors</span>
+                            </div>
+                            <div class="projRef">
+                                Chen Z, Koh PW, Ritter PL, Lorig K, Bantum E, Saria S. <em>Health Education &amp; Behavior</em> 2014. <a href="http://heb.sagepub.com/content/42/1/32.long" target="_blank">(pdf)</a>
+
+                             </div>
+                            <div class="projDesc">
+                                The debilitating effects of cancer can last long after initial treatment, even
+                                if the cancer is in remission. To cope with this, cancer survivors have increasingly turned towards online
+                                peer support groups. Using data from these groups, we studied
+                                how online participation affects downstream health outcomes, with an eye towards
+                                being able to better design such peer support groups.
+                            </div>
+                        </div>
+
+
+
+                        <div class="proj">
+                            <div class="projIconAndTitle">
+                                <span class="expandIcon">+</span>
+                                <span class="projTitle">Sparse filtering</span>
+                            </div>
+                            <div class="projRef">
+                                 Ngiam J, Koh PW, Chen Z, Bhaskar S, Ng AY. <em>NeurIPS</em> 2011.
+                                 <strong>Spotlight paper</strong>.
+                                 <a href="http://papers.nips.cc/paper/4334-sparse-filtering.pdf" target="_blank">(pdf)</a>
+
+                             </div>
+                            <div class="projDesc">
+                                Many existing algorithms for unsupervised feature learning require either extensive parameter tuning
+                                or are unable to scale to large input sizes.
+                                Here, we introduced sparse filtering, a simple new feature learning method that scales gracefully and
+                                has only one parameter to tune.
+                            </div>
+                        </div>
+
+                        <div class="proj">
+                            <div class="projIconAndTitle">
+                                <span class="expandIcon">+</span>
+                                <span class="projTitle">Learning deep energy models</span>
+                            </div>
+                            <div class="projRef">
+                                 Ngiam J, Chen Z, Koh PW, Ng AY. <em>ICML</em> 2011.
+                                 <a href="http://www.icml-2011.org/papers/557_icmlpaper.pdf" target="_blank">(pdf)</a>
+                            </div>
+                            <div class="projDesc">
+                                We introduced deep energy models, a type of deep generative model which uses several layers of feedforward
+                                functions to model the probability distribution of data.
+                                Our model admits efficient inference and obtains good generative and classification
+                                performance on natural and synthetic image data.
+                            </div>
+                        </div>
+
+
+                        <div class="proj">
+                            <div class="projIconAndTitle">
+                                <span class="expandIcon">+</span>
+                                <span class="projTitle">On random weights and unsupervised feature learning</span>
+                            </div>
+                            <div class="projRef">
+                                Saxe A, Koh PW, Chen Z, Bhand M, Suresh B, Ng AY.
+                                ICML 2011. Previously appeared in the Workshop on Deep Learning and Unsupervised Feature Learning, <em>NeurIPS</em> 2010.
+                                 <a href="http://www.icml-2011.org/papers/551_icmlpaper.pdf" target="_blank">(pdf)</a>
+                            </div>
+                            <div class="projDesc">
+                                Some feature learning architectures do well on object recognition tasks
+                                even when their feature weights are totally untrained and randomized. Why can random weights do so well?
+                                We show that certain architectures can be inherently frequency selective and translation invariant, even with random weights.
+                                Indeed, a lot of the performance of certain state-of-the-art methods comes from the architecture and not the training.
+                                Based on this, we showed how random weights can be used to perform extremely fast architecture searches.
+                            </div>
+                        </div>
+
+
+                        <div class="proj">
+                            <div class="projIconAndTitle">
+                                <span class="expandIcon">+</span>
+                                <span class="projTitle">Tiled convolutional neural networks</span>
+                            </div>
+                            <div class="projRef">
+                                Le Q, Ngiam J, Chen Z, Chia D, Koh PW, Ng AY. <em>NeurIPS</em> 2010.
+                                <a href="http://papers.nips.cc/paper/4136-tiled-convolutional-neural-networks.pdf" target="_blank">(pdf)</a>
+                                <a href="http://cs.stanford.edu/~quocle/TCNNweb/index.html" target="_blank">(visualizations)</a>
+                                <a href="http://cs.stanford.edu/~quocle/TCNNweb/pretraining.tar.gz" target="_blank">(code)</a>
+                            </div>
+                            <div class="projDesc">
+                                Convolutional neural networks, in which small patch-based filters are replicated across the whole image,
+                                have seen much success in tasks like digit and object recognition.
+                                However, enforcing strict convolution (i.e., each filter is the same at every location) may be unnecessarily restrictive.
+                                Here, we proposed tiled convolution neural networks that use a regular "tiled" pattern of tied weights, avoiding the need for adjacent filters to be identical.
+                                This flexibility allows us to learn complex invariances and achieve competitive object classification results.
+                            </div>
+                        </div>
+
+                        <div class="proj">
+                            <div class="projIconAndTitle">
+                                <span class="expandIcon">+</span>
+                                <span class="projTitle">Lower bound on the time complexity of local adiabatic evolution</span>
+                            </div>
+                            <div class="projRef">
+                                 Chen Z, Koh PW, Yan Z.
+                                 <em>Physical Review A</em>, 2006.
+                                 <a href="http://journals.aps.org/pra/pdf/10.1103/PhysRevA.74.052314" target="_blank">(pdf)</a>
+                             </div>
+                            <div class="projDesc">
+                                We presented two simple approaches for evaluating the time complexity of local adiabatic evolution
+                                using time-independent parameters. This lets us calculate the time complexity of algorithms using quantum
+                                adiabatic evolution without needing to evaluate the entire time-dependent gap function.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-block">
+
+                        <h3 id="teaching">Teaching</h3>
+
+                        <p>
+                            At Coursera, we were fortunate to have troves of data on what makes for effective teaching.
+                            I spoke frequently at workshops and conferences about online education
+                            and worked with many instructors on their courses. My team designed
+                            authoring tools and analytics dashboards for our instructors.
+                        </p>
+
+                        <p>
+                            In 2012, I was head TA for CS228 at Stanford, Daphne's class on
+                            <a href="https://www.coursera.org/course/pgm" target="_blank">Probabilistic Graphical Models. </a>
+                            Together with 8 other TAs, we revamped the class to make it
+                            application-focused and auto-gradable, and successfully taught it to 200+ Stanford students
+                            and 100,000+ online learners on the Coursera platform.
+                        </p>
+
+                        <p>
+                            Before college, Zhenghao Chen and I created and taught a series of 14 full-day workshops for 100+ high school students, covering introductions to programming, artificial intelligence, cryptography, and computer networking.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+    //<![CDATA[
+      $(document).ready(function(){
+
+            $(".projDesc").hide();
+            $(".projIconAndTitle").click(function(){
+                $(this).next().next().slideToggle("fast");
+                if ($(this).children().eq(0).html() == "-")
+                    $(this).children().eq(0).html("+");
+                else
+                    $(this).children().eq(0).html("-");
+            });
+
+            $(".projIconAndTitle").hover(function(){
+                $(this).toggleClass("activeTitle");
+                $(this).children().eq(1).toggleClass("activeTitle");
+            });
+
+      });
+    //]]>
+    </script>
+  </body>
+</html>
